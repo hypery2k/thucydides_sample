@@ -3,9 +3,15 @@ package demo.requirements;
 import net.thucydides.core.annotations.Feature;
 
 public class Application {
-    @Feature
-    public class Search {
-        public class SearchByKeyword {}
-        public class SearchByMultipleKeywords {}
-    }
+	@Feature
+	public class Search {
+		public class SearchByKeyword {
+		}
+
+		public class SearchFail {
+		}
+
+		public class SearchPending {
+		}
+	}
 }

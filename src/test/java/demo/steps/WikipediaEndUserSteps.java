@@ -1,6 +1,6 @@
 package demo.steps;
 
-import demo.pages.DictionaryPage;
+import demo.pages.WikipediaMainPage;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.pages.Pages;
 import net.thucydides.core.steps.ScenarioSteps;
@@ -11,9 +11,9 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.hasItem;
 
-public class EndUserSteps extends ScenarioSteps {
+public class WikipediaEndUserSteps extends ScenarioSteps {
 
-    DictionaryPage dictionaryPage;
+    WikipediaMainPage dictionaryPage;
 
     @Step
     public void enters(String keyword) {
