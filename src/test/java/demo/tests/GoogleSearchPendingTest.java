@@ -13,11 +13,11 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
-import demo.requirements.Application;
+import demo.requirements.Google;
 import demo.steps.GoogleSteps;
 
 @RunWith(ThucydidesRunner.class)
-@Story(Application.Search.SearchPending.class)
+@Story(Google.Search.SearchPending.class)
 public class GoogleSearchPendingTest {
 
 	@Managed(uniqueSession = true)

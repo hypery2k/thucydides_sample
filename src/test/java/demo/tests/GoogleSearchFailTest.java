@@ -11,11 +11,11 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
-import demo.requirements.Application;
+import demo.requirements.Google;
 import demo.steps.GoogleSteps;
 
 @RunWith(ThucydidesRunner.class)
-@Story(Application.Search.SearchFail.class)
+@Story(Google.Search.SearchFail.class)
 public class GoogleSearchFailTest {
 
 	@Managed(uniqueSession = true)

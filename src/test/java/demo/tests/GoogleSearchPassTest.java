@@ -11,11 +11,11 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
-import demo.requirements.Application;
+import demo.requirements.Google;
 import demo.steps.GoogleSteps;
 
 @RunWith(ThucydidesRunner.class)
-@Story(Application.Search.SearchByKeyword.class)
+@Story(Google.Search.SearchByKeyword.class)
 public class GoogleSearchPassTest {
 
 	@Managed(uniqueSession = true)

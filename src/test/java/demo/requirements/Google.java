@@ -2,7 +2,7 @@ package demo.requirements;
 
 import net.thucydides.core.annotations.Feature;
 
-public class Application {
+public class Google {
 	@Feature
 	public class Search {
 		public class SearchByKeyword {
