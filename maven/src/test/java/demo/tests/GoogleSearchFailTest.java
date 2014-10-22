@@ -1,5 +1,6 @@
 package demo.tests;
 
+import net.thucydides.core.annotations.Issues;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.ManagedPages;
 import net.thucydides.core.annotations.Steps;
@@ -28,6 +29,7 @@ public class GoogleSearchFailTest {
 	public GoogleSteps googleSteps;
 
 	@Test
+	@Issues(value = { "#1" })
 	public void googleSearchFailTest() {
 		googleSteps.performSearch("42");
 		googleSteps.findSearchResult("Stupidedia");

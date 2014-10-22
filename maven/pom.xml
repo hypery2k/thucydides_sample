@@ -89,6 +89,7 @@
                     <parallel>classes</parallel>
                     <systemPropertyVariables>
                         <webdriver.driver>${webdriver.driver}</webdriver.driver>
+                        <thucydides.issue.tracker.url>https://github.com/hypery2k/thucydides_sample/issues/{0}</thucydides.issue.tracker.url>
                     </systemPropertyVariables>
                 </configuration>
                 <executions>

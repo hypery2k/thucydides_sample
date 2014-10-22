@@ -1,5 +1,6 @@
 package demo.tests;
 
+import net.thucydides.core.annotations.Issues;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.ManagedPages;
 import net.thucydides.core.annotations.Steps;
@@ -25,6 +26,7 @@ public class GoogleLoginTest {
 	public GoogleSteps googleSteps;
 
 	@Test
+	@Issues(value = { "#2" })
 	public void performLogin() {
 		googleSteps.clickOnSignIn();
 		googleSteps.performLogin("google@gmail.com", "pass");

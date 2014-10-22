@@ -1,5 +1,6 @@
 package demo.tests;
 
+import net.thucydides.core.annotations.Issues;
 import net.thucydides.core.annotations.Managed;
 import net.thucydides.core.annotations.ManagedPages;
 import net.thucydides.core.annotations.Steps;
@@ -51,6 +52,7 @@ public class CsvSearchByKeywordStoryTest {
 	public WikipediaEndUserSteps endUser;
 
 	@Test
+	@Issues(value = { "#1" })
 	public void searching_by_keyword_should_display_the_corresponding_article() {
 		endUser.is_the_home_page();
 		endUser.looks_for(getKeyword());
